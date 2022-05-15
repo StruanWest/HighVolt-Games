@@ -1,0 +1,355 @@
+/*--------------------------------------BODY--------------------------------------*/
+body {
+    background-color: #fbfdff;                              /*-----------BACKGROUND-----------*/
+    color: white;  
+    font-family: Bahnschrift; margin:0;               /*-----------FONT COLOUR-----------*/
+}
+
+.headers {
+    color: #36393F;                                         /*-----------BACKGROUND-----------*/
+    font-size: 50px;
+    font-family: Bahnschrift; margin:0;    
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.mainText {
+    color: #36393F;                                         /*-----------BACKGROUND-----------*/
+    font-size: 20px;
+    font-family: Arimo; margin:0;    
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+/*--------------------------------------CAROUSEL--------------------------------------*/
+
+* {     /*adjest text*/
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+    
+.mySlides {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+    position: center;
+    height: 400px;
+    width: auto;  
+    margin-top: -46px;  /*how far the image is from the top*/
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(255 255 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -55px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*--------------------------------------LOGIN PAGE--------------------------------------*/
+
+.login{
+    display: flex;
+    flex-direction: column;         /*makes the boxes and text stack*/
+    align-items: center;
+    padding-top: 75px;
+    color: #36393F;
+    width: 100%;
+
+}
+
+/*--------------------------------------SEARCH RESULTS PAGE--------------------------------------*/
+
+.results {
+    margin-left: 50px;
+    margin-right: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    float: left;
+    width: 20%;
+    font-size: 15px;
+}
+
+.results .game_boxes {
+    vertical-align: right;
+    float: left;
+    width: auto;
+    height: 170px;
+}
+
+
+
+/*--------------------------------------INDIVIDUAL GAME PAGE--------------------------------------*/
+
+.game_info {
+    padding-left: 300px;
+    padding-right: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    float: center;
+    flex-direction: row;
+}
+
+.game_info img{
+    padding-right: 100px;
+    width: 25%;
+    height: auto;
+    display: flex;
+    float: center;
+}
+
+.console_logo {
+    width: 25px;
+    height: auto;
+}
+
+/*--------------------------------------HEADER--------------------------------------*/
+
+.header{     /*The header box*/
+    width: 100%;
+    height: 250px;
+    background-color: #36393F;
+    margin-top: 0px;
+}
+
+header .inner{
+    text-align: center;
+    width: 80%; /* This is the inner width of the content inside of your header (80%, etc) */
+    margin: auto;
+    padding-top: 50px;
+    display: block;
+
+}
+
+header .logo{
+    display: table;
+    float: left;
+}
+
+header .logo img{
+    height: 200px;
+    margin-top: -25px;          /*space between logo and top*/
+}
+
+/*--------------------------------------NAVIGATION--------------------------------------*/
+
+header nav{     /*navigation buttons*/
+    float: center;
+    align-content: center;
+
+}
+
+header .buttons{      /*navigation buttons alignment and position*/
+    margin-left: 32%;             /*Space between Buttons*/
+}
+
+header nav li{      /*navigation buttons alignment and position*/
+    display: table;
+    height: 175px;                  /*Space from top*/
+    float: left;                    /*Right inverts list order*/
+    margin-right: 30px;             /*Space between Buttons*/
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav a{
+    color: #FFFF00;
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+header nav a:hover{     /*buttons change colour when mouse hovers over it*/
+    color: rgb(194, 165, 3);
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+
+/*--------------------------------------SEARCH BAR--------------------------------------*/
+
+header nav .searchbar{
+    padding-top: 50px;
+    float: left;             /*here so i can move the box manually*/
+    margin-left: 22%;       /*how far the box is from the left*/
+    margin-right: 30%;      /*pushes the navigation buttons onto the next line*/
+}   
+
+/*--------------------------------------FOOTER--------------------------------------*/
+
+.footer{     /*The footer background/box*/
+    width: 100%;
+    height: 250px;
+    border-bottom: solid 0px ;
+    font-family: 'Poppins';
+    background-color: #2C2F34;
+    display: flex;
+}
+
+footer .inner{      /*change things inside the footer box*/
+    width: 100%; 
+    height: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+footer .inner nav{      /*navigation buttons*/
+    float: middle;
+    text-align: center;
+}
+
+footer nav li{      /*adjust the nav buttons*/
+    padding-top: 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav li:last-of-type{
+    margin-right: 0;
+}
+
+footer nav span {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+footer nav a{       /*turns the links white*/
+    color: #FFFF00;
+}
+
+
+footer nav a:hover{     /*buttons change colour when mouse hovers over it*/
+    color: rgb(194, 165, 3);
+}
+
+
+
+/*--------------------------------------WELCOME PAGE--------------------------------------*/
+
+.welcome {
+    margin-left: 0px;
+    margin-right: 350px;
+    margin-top: 350px;
+    padding: 40px;
+    text-align: center;
+    background-color: #2C2F34;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 50px;
+    display: table;
+    float: center;
+}
+
+.loginButton{
+    color: #FFFF00;
+}
